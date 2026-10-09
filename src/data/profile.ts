@@ -14,8 +14,9 @@ export const profile = {
   ],
   // Pegá el link de cada certificado en `url` y aparece el botón "Ver certificado".
   certificates: [
-    { id: "itba", issuer: "ITBA", year: "2023", url: null as string | null },
-    { id: "coderhouse", issuer: "Coderhouse", year: "2022", url: null as string | null },
+    { id: "itba", issuer: "ITBA", year: "2023" as string | null, url: "https://www.linkedin.com/in/jeremias-arrieta/overlay/1635555527991/single-media-viewer/?profileId=ACoAADunYJEBF7ebBWbgYNePeZcFh9OB7ARbKzA" as string | null },
+    { id: "coderhouse", issuer: "Coderhouse", year: "2022", url: "https://www.linkedin.com/in/jeremias-arrieta/overlay/1635555530543/single-media-viewer/?profileId=ACoAADunYJEBF7ebBWbgYNePeZcFh9OB7ARbKzA" },
+    { id: "prompting", issuer: "Prompting", year: null, url: "https://www.linkedin.com/in/jeremias-arrieta/overlay/1780094180187/single-media-viewer/?profileId=ACoAADunYJEBF7ebBWbgYNePeZcFh9OB7ARbKzA" },
   ],
   projects: [
     {
@@ -72,7 +73,7 @@ const es = {
   aboutEyebrow: "Sobre mí",
   educationTitle: "Estudios",
   certificatesTitle: "Certificados",
-  certificateNames: { itba: "Bootcamp Full Stack Developer", coderhouse: "Desarrollo Web" } as Record<string, string>,
+  certificateNames: { itba: "Bootcamp Full Stack Developer", coderhouse: "Desarrollo Web", prompting: "Prompting aplicado al estudio y trabajo" } as Record<string, string>,
   viewCertificate: "Ver certificado",
   education: [
     { title: "Ciencia de Datos e Inteligencia Artificial", place: "IES", period: "Mar. 2026 – Actualidad", detail: "Carrera en curso: estadística, análisis de datos, machine learning e IA." },
@@ -133,7 +134,7 @@ const en: Content = {
   aboutEyebrow: "About me",
   educationTitle: "Education",
   certificatesTitle: "Certificates",
-  certificateNames: { itba: "Full Stack Developer Bootcamp", coderhouse: "Web Development" },
+  certificateNames: { itba: "Full Stack Developer Bootcamp", coderhouse: "Web Development", prompting: "Prompting applied to study and work" },
   viewCertificate: "View certificate",
   education: [
     { title: "Data Science & Artificial Intelligence", place: "IES", period: "Mar 2026 – Present", detail: "Ongoing degree: statistics, data analysis, machine learning and AI." },

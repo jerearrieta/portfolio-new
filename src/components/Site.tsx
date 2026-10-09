@@ -76,7 +76,7 @@ function Page() {
                 <article key={c.id} className={`cert ${i % 2 ? "violet" : "orange"}`}>
                   <div className="cert-head">
                     <span className="display cert-issuer">{c.issuer}</span>
-                    <span className="eyebrow">{c.year}</span>
+                    {c.year && <span className="eyebrow">{c.year}</span>}
                   </div>
                   <h3>{t.certificateNames[c.id]}</h3>
                   {c.url && (

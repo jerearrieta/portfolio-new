@@ -70,16 +70,20 @@ function Page() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="now">
-              <p className="eyebrow now-title"><span className="dot" />{t.now.eyebrow}</p>
-              <ul>
-                {t.now.items.map((it) => (
-                  <li key={it.label}>
-                    <span className="eyebrow">{it.label}</span>
-                    <strong>{it.value}</strong>
-                  </li>
-                ))}
-              </ul>
+            <div className="certs">
+              <p className="eyebrow">{t.certificatesTitle}</p>
+              {profile.certificates.map((c, i) => (
+                <article key={c.id} className={`cert ${i % 2 ? "violet" : "orange"}`}>
+                  <div className="cert-head">
+                    <span className="display cert-issuer">{c.issuer}</span>
+                    <span className="eyebrow">{c.year}</span>
+                  </div>
+                  <h3>{t.certificateNames[c.id]}</h3>
+                  {c.url && (
+                    <a className="cert-link" href={c.url} target="_blank" rel="noreferrer">{t.viewCertificate} ↗</a>
+                  )}
+                </article>
+              ))}
             </div>
           </Reveal>
         </section>

@@ -12,6 +12,11 @@ export const profile = {
     { name: "GitHub", url: "https://github.com/jerearrieta" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/jeremias-arrieta/" },
   ],
+  // Pegá el link de cada certificado en `url` y aparece el botón "Ver certificado".
+  certificates: [
+    { id: "itba", issuer: "ITBA", year: "2023", url: null as string | null },
+    { id: "coderhouse", issuer: "Coderhouse", year: "2022", url: null as string | null },
+  ],
   projects: [
     {
       id: "asistencia",
@@ -66,15 +71,9 @@ const es = {
   messageClosing: "Siempre buscando optimizar procesos.",
   aboutEyebrow: "Sobre mí",
   educationTitle: "Estudios",
-  now: {
-    eyebrow: "Ahora mismo",
-    items: [
-      { label: "Estudiando", value: "Ciencia de Datos e IA en el IES" },
-      { label: "Construyendo", value: "Asistencia QR" },
-      { label: "Trabajando", value: "QA & Soporte en GearUp Booster" },
-      { label: "Aprendiendo", value: "Machine learning y análisis de datos" },
-    ],
-  },
+  certificatesTitle: "Certificados",
+  certificateNames: { itba: "Bootcamp Full Stack Developer", coderhouse: "Desarrollo Web" } as Record<string, string>,
+  viewCertificate: "Ver certificado",
   education: [
     { title: "Ciencia de Datos e Inteligencia Artificial", place: "IES", period: "Mar. 2026 – Actualidad", detail: "Carrera en curso: estadística, análisis de datos, machine learning e IA." },
     { title: "Bootcamp Full Stack Developer", place: "ITBA", period: "Ago. 2023 – Dic. 2023", detail: "Desarrollo full stack con Next.js, Django y bases de datos, trabajando en equipo por sprints." },
@@ -133,15 +132,9 @@ const en: Content = {
   messageClosing: "Always looking to optimize processes.",
   aboutEyebrow: "About me",
   educationTitle: "Education",
-  now: {
-    eyebrow: "Right now",
-    items: [
-      { label: "Studying", value: "Data Science & AI at IES" },
-      { label: "Building", value: "Asistencia QR" },
-      { label: "Working", value: "QA & Support at GearUp Booster" },
-      { label: "Learning", value: "Machine learning and data analysis" },
-    ],
-  },
+  certificatesTitle: "Certificates",
+  certificateNames: { itba: "Full Stack Developer Bootcamp", coderhouse: "Web Development" },
+  viewCertificate: "View certificate",
   education: [
     { title: "Data Science & Artificial Intelligence", place: "IES", period: "Mar 2026 – Present", detail: "Ongoing degree: statistics, data analysis, machine learning and AI." },
     { title: "Full Stack Developer Bootcamp", place: "ITBA", period: "Aug 2023 – Dec 2023", detail: "Full stack development with Next.js, Django and databases, working in sprints as a team." },

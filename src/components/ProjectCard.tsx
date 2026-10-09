@@ -25,7 +25,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.stack.map((s) => <span key={s} className="tag">{s}</span>)}
         </div>
         <div className="card-links">
-          {project.url && <a href={project.url} target="_blank" rel="noreferrer">{t.demo} ↗</a>}
           <a href={project.repo} target="_blank" rel="noreferrer">{t.code} ↗</a>
         </div>
       </div>

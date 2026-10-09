@@ -7,15 +7,10 @@ export const profile = {
   firstName: "Jeremías",
   lastName: "Arrieta",
   photo: "/images/jeremias.png",
-  // Agregá tu email acá si querés mostrarlo; mientras tanto el contacto va a LinkedIn.
-  email: null as string | null,
+  email: "jerearrieta2254@gmail.com" as string | null,
   socials: [
     { name: "GitHub", url: "https://github.com/jerearrieta" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/jeremias-arrieta/" },
-  ],
-  skills: [
-    "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python",
-    "Django", "Supabase", "PostgreSQL", "Tailwind", "Git", "QA Testing",
   ],
   projects: [
     {
@@ -24,7 +19,6 @@ export const profile = {
       year: "2026",
       status: "wip" as const,
       stack: ["Next.js", "Supabase", "Vercel"],
-      url: "https://asistencia-qr-sunr.vercel.app",
       repo: "https://github.com/jerearrieta/asistencia-qr",
       theme: "orange" as const,
     },
@@ -34,7 +28,6 @@ export const profile = {
       year: "2023",
       status: "done" as const,
       stack: ["Next.js", "Django", "Tailwind"],
-      url: "https://itbank-beta.vercel.app",
       repo: "https://github.com/jerearrieta/ITBANK-2023",
       theme: "violet" as const,
     },
@@ -44,7 +37,6 @@ export const profile = {
       year: "2024",
       status: "done" as const,
       stack: ["React", "Node.js"],
-      url: null,
       repo: "https://github.com/jerearrieta/Refrimax",
       theme: "mix" as const,
     },
@@ -54,7 +46,6 @@ export const profile = {
       year: "2024",
       status: "done" as const,
       stack: ["React", "Node.js"],
-      url: null,
       repo: "https://github.com/EzequielDiaz1/Northern-Lights",
       theme: "violet" as const,
     },
@@ -90,7 +81,6 @@ const es = {
   projectsTitle: ["Hall of", "Fame"],
   projectsIntro: "Lo que hice y lo que estoy construyendo. Pasá el mouse por cada tarjeta.",
   wip: "En curso",
-  demo: "Ver demo",
   code: "Código",
   projectText: {
     asistencia: "Sistema de asistencia universitaria con QR rotativo: el docente abre la clase, los alumnos escanean y se registra al instante. Incluye tablero de estadísticas y exportes a CSV.",
@@ -102,10 +92,14 @@ const es = {
     eyebrow: "Proyecto destacado",
     title: "Asistencia QR",
     description: "Reemplaza la lista en papel: el docente abre la clase, se genera un QR que rota, y cada alumno se registra desde su celular. Con roles, controles antifraude y un tablero con alumnos en riesgo.",
-    cta: "Ver en vivo",
     points: ["QR rotativo antifraude", "Tablero de estadísticas", "Exportes a CSV", "Roles: director, docente y alumno"],
   },
   skillsEyebrow: "Stack & habilidades",
+  skillsTitle: "Qué hago",
+  capabilities: [
+    { title: "Desarrollo web", text: "Armo aplicaciones completas con el stack de Node.js y React/Next.js, conectadas a bases de datos." },
+    { title: "Inteligencia artificial", text: "Creo modelos de IA que analizan grandes volúmenes de datos, reconocen patrones complejos y toman decisiones o hacen predicciones." },
+  ],
   experienceEyebrow: "Trayectoria",
   experienceTitle: "Experiencia",
   experience: [
@@ -150,7 +144,6 @@ const en: Content = {
   projectsTitle: ["Hall of", "Fame"],
   projectsIntro: "What I've built and what I'm building now. Hover over each card.",
   wip: "In progress",
-  demo: "Live demo",
   code: "Code",
   projectText: {
     asistencia: "University attendance system with a rotating QR: the teacher opens the class, students scan and check in instantly. Includes a stats dashboard and CSV exports.",
@@ -162,10 +155,14 @@ const en: Content = {
     eyebrow: "Featured project",
     title: "Asistencia QR",
     description: "It replaces the paper roll call: the teacher opens the class, a rotating QR is generated, and each student checks in from their phone. With roles, anti-fraud controls and a dashboard that flags at-risk students.",
-    cta: "See it live",
     points: ["Anti-fraud rotating QR", "Stats dashboard", "CSV exports", "Roles: director, teacher and student"],
   },
   skillsEyebrow: "Stack & skills",
+  skillsTitle: "What I do",
+  capabilities: [
+    { title: "Web development", text: "I build full applications with the Node.js and React/Next.js stack, connected to databases." },
+    { title: "Artificial intelligence", text: "I create AI models that analyze large volumes of data, recognize complex patterns, and make decisions or predictions." },
+  ],
   experienceEyebrow: "Track record",
   experienceTitle: "Experience",
   experience: [

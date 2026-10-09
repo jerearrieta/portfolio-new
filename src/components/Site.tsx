@@ -41,7 +41,6 @@ function Timeline({ items }: { items: Item[] }) {
 
 function Page() {
   const { t } = useLang();
-  const skills = [...profile.skills, ...profile.skills];
   const linkedin = profile.socials.find((s) => s.name === "LinkedIn")!.url;
   const contactHref = profile.email ? `mailto:${profile.email}` : linkedin;
   const featured = profile.projects[0];
@@ -109,22 +108,28 @@ function Page() {
                 {t.featured.points.map((pt) => <li key={pt}>{pt}</li>)}
               </ul>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 32 }}>
-                {featured.url && (
-                  <a className="btn btn-dark" href={featured.url} target="_blank" rel="noreferrer">{t.featured.cta} ↗</a>
-                )}
-                <a className="btn btn-outline" href={featured.repo} target="_blank" rel="noreferrer">{t.code} ↗</a>
+                <a className="btn btn-dark" href={featured.repo} target="_blank" rel="noreferrer">{t.code} ↗</a>
               </div>
             </div>
             <QrArt />
           </Reveal>
         </section>
 
-        <section className="section" style={{ paddingInline: 0 }}>
-          <p className="eyebrow" style={{ padding: "0 var(--pad) 24px" }}>{t.skillsEyebrow}</p>
-          <div className="marquee">
-            <div className="marquee-track">
-              {skills.map((s, i) => <span key={i} className="display">{s}</span>)}
-            </div>
+        <section className="section">
+          <Reveal>
+            <p className="eyebrow">{t.skillsEyebrow}</p>
+            <h2 className="display big-title">{t.skillsTitle}</h2>
+          </Reveal>
+          <div className="capabilities">
+            {t.capabilities.map((c, i) => (
+              <Reveal key={c.title} delay={i * 0.12}>
+                <article className={`capability ${i === 0 ? "orange" : "violet"}`}>
+                  <span className="display capability-num">0{i + 1}</span>
+                  <h3 className="display">{c.title}</h3>
+                  <p>{c.text}</p>
+                </article>
+              </Reveal>
+            ))}
           </div>
         </section>
 

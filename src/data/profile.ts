@@ -66,12 +66,15 @@ const es = {
   messageClosing: "Siempre buscando optimizar procesos.",
   aboutEyebrow: "Sobre mí",
   educationTitle: "Estudios",
-  stats: [
-    { value: "2022", label: "Escribí mi primera línea de código" },
-    { value: "4", label: "Proyectos publicados" },
-    { value: "∞", label: "Ganas de seguir aprendiendo" },
-    { value: "2", label: "Mundos: web y datos" },
-  ],
+  now: {
+    eyebrow: "Ahora mismo",
+    items: [
+      { label: "Estudiando", value: "Ciencia de Datos e IA en el IES" },
+      { label: "Construyendo", value: "Asistencia QR" },
+      { label: "Trabajando", value: "QA & Soporte en GearUp Booster" },
+      { label: "Aprendiendo", value: "Machine learning y análisis de datos" },
+    ],
+  },
   education: [
     { title: "Ciencia de Datos e Inteligencia Artificial", place: "IES", period: "Mar. 2026 – Actualidad", detail: "Carrera en curso: estadística, análisis de datos, machine learning e IA." },
     { title: "Bootcamp Full Stack Developer", place: "ITBA", period: "Ago. 2023 – Dic. 2023", detail: "Desarrollo full stack con Next.js, Django y bases de datos, trabajando en equipo por sprints." },
@@ -104,6 +107,7 @@ const es = {
   experienceTitle: "Experiencia",
   experience: [
     { title: "QA (Quality Assurance) & Soporte Técnico", place: "GearUp Booster", period: "2024 – Actualidad", detail: "Testing de producto, detección y reporte de bugs, y soporte técnico a usuarios." },
+    { title: "Desarrollador freelance", place: "Proyectos independientes", period: "2023 – 2024", detail: "Desarrollo de sitios y aplicaciones web a medida para negocios y clientes." },
     { title: "Servicio de catering", place: "Hotel", period: "2022 – 2023", detail: "Atención al cliente y trabajo en equipo bajo presión." },
   ],
   footerTagline: ["Siempre", "aprendiendo."],
@@ -129,12 +133,15 @@ const en: Content = {
   messageClosing: "Always looking to optimize processes.",
   aboutEyebrow: "About me",
   educationTitle: "Education",
-  stats: [
-    { value: "2022", label: "Wrote my first line of code" },
-    { value: "4", label: "Published projects" },
-    { value: "∞", label: "Eagerness to keep learning" },
-    { value: "2", label: "Worlds: web and data" },
-  ],
+  now: {
+    eyebrow: "Right now",
+    items: [
+      { label: "Studying", value: "Data Science & AI at IES" },
+      { label: "Building", value: "Asistencia QR" },
+      { label: "Working", value: "QA & Support at GearUp Booster" },
+      { label: "Learning", value: "Machine learning and data analysis" },
+    ],
+  },
   education: [
     { title: "Data Science & Artificial Intelligence", place: "IES", period: "Mar 2026 – Present", detail: "Ongoing degree: statistics, data analysis, machine learning and AI." },
     { title: "Full Stack Developer Bootcamp", place: "ITBA", period: "Aug 2023 – Dec 2023", detail: "Full stack development with Next.js, Django and databases, working in sprints as a team." },
@@ -167,6 +174,7 @@ const en: Content = {
   experienceTitle: "Experience",
   experience: [
     { title: "QA (Quality Assurance) & Technical Support", place: "GearUp Booster", period: "2024 – Present", detail: "Product testing, finding and reporting bugs, and technical support for users." },
+    { title: "Freelance developer", place: "Independent projects", period: "2023 – 2024", detail: "Custom websites and web apps for businesses and clients." },
     { title: "Catering service", place: "Hotel", period: "2022 – 2023", detail: "Customer service and teamwork under pressure." },
   ],
   footerTagline: ["Always", "learning."],

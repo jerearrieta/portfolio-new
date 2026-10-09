@@ -70,13 +70,16 @@ function Page() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="stats">
-              {t.stats.map((s) => (
-                <div key={s.label} className="stat">
-                  <div className="display">{s.value}</div>
-                  <p className="eyebrow">{s.label}</p>
-                </div>
-              ))}
+            <div className="now">
+              <p className="eyebrow now-title"><span className="dot" />{t.now.eyebrow}</p>
+              <ul>
+                {t.now.items.map((it) => (
+                  <li key={it.label}>
+                    <span className="eyebrow">{it.label}</span>
+                    <strong>{it.value}</strong>
+                  </li>
+                ))}
+              </ul>
             </div>
           </Reveal>
         </section>
